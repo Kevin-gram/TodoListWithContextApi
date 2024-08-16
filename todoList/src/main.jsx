@@ -6,7 +6,7 @@ import { TodoProvider } from "./Contexts/TodoContext/index.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <TodoProvider>
-      <App />
+      <App className="bg-green-200" />
     </TodoProvider>
   </StrictMode>
 );

@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { useTodos } from "../../Contexts/TodoContext";
+import "../../index.css";
 function TodoList() {
   const { todos, toggleTodo } = useTodos();
 
   return (
     <div>
       {todos.map((todo, index) => (
-        <div key={index}>
+        <div key={index} className="form">
           <input
             type="checkbox"
             checked={todo.completed}

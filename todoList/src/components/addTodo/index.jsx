@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useTodos } from "../../Contexts/TodoContext";
-
+import "../../index.css";
 function AddTodo() {
   const [text, setText] = useState("");
   const { addTodo } = useTodos();
@@ -12,7 +12,10 @@ function AddTodo() {
   };
   return (
     <div>
-      <form onSubmit={SubmitHandler}>
+      <form
+        onSubmit={SubmitHandler}
+        className=" form bg-slate-300 shadow-orange-950"
+      >
         <input
           type="text"
           value={text}
